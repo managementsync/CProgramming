@@ -14,7 +14,7 @@ void printhalf(char s[])
 		printf("%c", s[i]);
 	}
 	printf("\n");
-	
+	//
 }
 
 int main()
