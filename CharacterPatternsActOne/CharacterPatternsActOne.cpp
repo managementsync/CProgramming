@@ -9,6 +9,25 @@ void pattern(int ind)
 	for (int i = 1; i <= ind; i++)
 	{
 		scanf_s("%d %d", &a, &b);
+		for (int i = 0; i < a; i++)
+		{
+			for (int j = 0; j < b; j++)
+			{
+				if (i % 2 == 0 && j % 2 != 0 || i % 2 != 0 && j % 2 ==0)
+				{
+					printf(".");
+
+				}
+
+				else
+				{
+					printf("*");
+
+				}
+				printf("\n");
+			}
+			
+		}
 	}
 
 }
@@ -16,7 +35,8 @@ void pattern(int ind)
 
 int main()
 {
-	pattern(3);
+	int c = 0;
+	pattern(scanf_s("d", c));
 	printf("*\n.\n");
 
 
