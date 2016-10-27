@@ -2,8 +2,9 @@
 #include <string.h>
 #include <conio.h>
 
-void pattern(int ind)
+void pattern()
 {
+	int ind;
 	scanf_s("%d", &ind);
 	int a, b;
 	for (int i = 1; i <= ind; i++)
@@ -13,21 +14,23 @@ void pattern(int ind)
 		{
 			for (int j = 0; j < b; j++)
 			{
-				if (i % 2 == 0 && j % 2 != 0 || i % 2 != 0 && j % 2 ==0)
+				if ((i + j) % 2 == 0)
 				{
-					printf(".");
+					printf("*");
 
 				}
 
 				else
 				{
-					printf("*");
+					printf(".");
 
 				}
-				printf("\n");
+				
+				
 			}
-			
+			printf("\n");
 		}
+		printf("\n");
 	}
 
 }
@@ -35,9 +38,9 @@ void pattern(int ind)
 
 int main()
 {
-	int c = 0;
-	pattern(scanf_s("d", c));
-	printf("*\n.\n");
+	
+	pattern();
+	
 
 
 	_getch();
