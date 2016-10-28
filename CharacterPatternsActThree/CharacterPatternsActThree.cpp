@@ -12,9 +12,9 @@ void pattern()
 	{
 		scanf_s("%d %d", &a, &b);
 
-		for (int i = 0; i < (a*3) + 1; i++) //fills rows
+		for (int i = 0; i < (a*3) + 1; i++) // doesnt fill just for controlling the inner loop
 		{
-			for (int j = 0; j < (b*3) + 1; j++) //fills colS
+			for (int j = 0; j < (b*3) + 1; j++) //fills row
 			{
 				if (i % 3 == 0 || j % 3 == 0)
 				{
