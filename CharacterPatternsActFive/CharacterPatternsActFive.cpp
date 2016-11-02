@@ -26,10 +26,11 @@ void pattern()
 				
 				}
 
-				else if (i / c && j / c)
+				else if ((i / c + j /c) % 2 == 0)
 				{
 					
 					printf("\\");
+					
 					
 				}
 
@@ -38,6 +39,7 @@ void pattern()
 				{
 					printf(".");
 				}
+				
 
 			}
 			printf("\n");
