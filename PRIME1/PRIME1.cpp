@@ -9,15 +9,15 @@ int main(void) {
 
 	for (int i = 0; i < test; i++) {
 		scanf_s("%d %d", &a, &b);
+		if (a == 1)
+		{
+
+			a++;
+		}
 
 		for (int j = a; j <= b; j++) {
-			if (a == 1 || a == 2)
-			{
-
-				continue;
-			}
-
-			if (b % j == 0)
+			
+			if (j / j != 1 || j / 1 != 1)
 			{
 
 				printf("%d\n", j);
